@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6116794f8e9b578a5659ef93e0facb5c"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=clusterer"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=drawing"></script>
   <style>
   #map {
     width:500px;
@@ -15,8 +15,8 @@
   </style>
 </head>
 <body>
- <h4>잠실롯데타워 찾아오시는길 - 기본형</h4>
- <div id="map">
+<h4>잠실롯데타워 찾아오시는길 - 기본형</h4>
+<div id="map">
 
  </div>
  <script>
@@ -36,7 +36,7 @@
 
 </div>
  <script>
-var container = document.getElementById('map'),
+var container = document.getElementById('map2'),
     map = new daum.maps.Map(container, {  
         center: new daum.maps.LatLng(37.512876, 127.102563) 
     });
