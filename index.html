@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6116794f8e9b578a5659ef93e0facb5c"></script>
+  <style>
+  #map {
+    width:500px;
+    height:400px;
+  }
+  </style>
+</head>
+<body>
+ <h4>잠실롯데타워 찾아오시는길</h4>
+ <div id="map">
+
+ </div>
+ <script>
+  var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+  var options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new daum.maps.LatLng(37.512876, 127.102563), //지도의 중심좌표.
+      level: 3 //지도의 레벨(확대, 축소 정도)
+  };
+
+  var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
+ </script>
+</body>
+</html>
